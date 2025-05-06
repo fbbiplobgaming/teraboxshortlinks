@@ -23,7 +23,7 @@ const bot = new TelegramBot(botToken, { polling: true });
 bot.onText(/\/start/, (msg) => {
   const chatId = msg.chat.id;
   const username = msg.from.username;
-  const welcomeMessage = `😇 Hello, ${username}!\n\n`
+  const welcomeMessage = `😇 Hello, {fullname}
     + 'Welcome to the botlatournament URL Shortener Bot!\n'
     + 'You can use this bot to shorten URLs using the botlatournament.xyz api service.\n\n'
     + 'To shorten a URL, just type or paste the URL directly in the chat, and the bot will provide you with the shortened URL.\n\n'
